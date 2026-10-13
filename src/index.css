@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root { font-family: 'DM Sans', sans-serif; color: #18372c; background: #f6f8f5; font-synthesis: none; text-rendering: optimizeLegibility; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; }
+h1,h2,h3,h4 { font-family: 'Manrope', sans-serif; letter-spacing: -0.045em; }
+button, a { -webkit-tap-highlight-color: transparent; }
+::selection { background: #cfe7d6; color: #123d30; }
+.container-wide { width: min(1180px, calc(100% - 48px)); margin-inline: auto; }
+.eyebrow { display: inline-flex; align-items: center; gap: 9px; color: #4b8d6c; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: .16em; }
+.eyebrow:before { content:''; display:inline-block; width:20px; height:1px; background:#4b8d6c; }
+.btn-primary { display:inline-flex; align-items:center; justify-content:center; gap:9px; border-radius:999px; padding:14px 22px; background:#27664c; color:white; font-size:13px; font-weight:700; transition:transform .25s,background .25s; }
+.btn-primary:hover { background:#174b36; transform:translateY(-2px); }
+.btn-outline { display:inline-flex; align-items:center; justify-content:center; gap:8px; border:1px solid #d7e2d8; border-radius:999px; padding:13px 21px; color:#244d3a; font-size:13px; font-weight:700; transition:all .2s; }
+.btn-outline:hover { border-color:#27664c; background:white; }
+.card { border:1px solid #e5ebe5; border-radius:22px; background:rgba(255,255,255,.72); }
+@media(max-width:640px){ .container-wide{width:min(100% - 32px,1180px)} }
